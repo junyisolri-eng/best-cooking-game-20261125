@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midnight Wok — a cooking game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #101418; height: 100%; overflow: hidden; }
+  #wrap { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+  canvas { width: min(100vw, calc(100vh * 1.6)); height: min(100vh, calc(100vw / 1.6)); display: block; background: #1a2b33; }
+  #status { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="1440" height="900"></canvas></div>
+<div id="status" aria-live="polite"></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
